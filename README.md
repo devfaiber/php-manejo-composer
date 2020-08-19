@@ -9,3 +9,6 @@
 
 ### CONFIGURACION
 copiar el archivo `.env.example` y pegarlo como `.env`, configurar la base de datos y realizar `composer install`
+
+## EJECUTAR
+para ejecutar se requiere `docker` instalado, cuando se instale poseer docker-compose y luego `docker-compose up`
