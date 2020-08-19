@@ -1,0 +1,11 @@
+{% extends 'layout.twig' %}
+
+{% block contenido %}
+Bienvenido al index
+<ul>
+    {% for item in notas %}
+        <li>{{ item.titulo }} ||| {{ item.descripcion }}</li>
+    {% endfor %}
+
+</ul>
+{% endblock %}

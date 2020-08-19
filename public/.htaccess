@@ -1,0 +1,9 @@
+RewriteEngine On
+# condicion si no es un directorio
+RewriteCond %{REQUEST_FILENAME} !-d
+# condicion si no es un fichero
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# redirecion QSA a query a string
+# L fin 
+RewriteRule ^ index.php [QSA,L]

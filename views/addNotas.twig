@@ -1,0 +1,29 @@
+{% extends 'layout.twig' %}
+
+{% block contenido %}
+<h1>Bienvenido a añadir notas</h1>
+    <hr>
+    <p>{{ message }}</p>
+    <hr>
+    <form action="/notas/add" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="">Titulo</label>
+            <input type="text" name="titulo">
+        </div>
+        <div>
+            <label for="">Descripcion</label>
+            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <select name="estado" id="">
+                <option value=""  selected disabled>-- Seleccione estado --</option> 
+                <option value="1">Activo</option>
+                <option value="0">Desactivo</option>
+            </select>
+        </div>
+        <div>
+            <input type="file" name="logo">
+        </div>
+        <button type="submit">Guardar</button>
+    </form>
+{% endblock %}

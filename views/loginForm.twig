@@ -1,0 +1,12 @@
+{% extends 'layout.twig' %}
+{% block contenido %}
+<h1>Hola usuarios</h1>
+<hr>
+<p>{{ message }}</p>
+<hr>
+<form action="/auth" method="post">
+    <input type="text" name="usuario" placeholder="usuario o email">
+    <input type="text" name="password" placeholder="contraseña">
+    <input type="submit" value="guardar usuario">
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+
+{% block contenido %}
+Bienvenido al admin
+<h1>Dashboard</h1>
+<hr>
+<ul>
+    <li><a href="/">lista notas</a></li>
+    <li><a href="/users/add">add users</a></li>
+    <li><a href="/notas/add">add notes</a></li>
+    <li><a href="/auth/logout">cerrar session</a></li>
+</ul>
+{% endblock %}
